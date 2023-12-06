@@ -4,9 +4,9 @@
 
 ![Alt text](image-6.png)
 
-##### Consultas
+### Consultas
 
-1. Agregue un campo Estado_Matrícula a la tabla Matrícula que indique si el estudiante se encuentra “En Ejecución”, “Terminado” o “Cancelado”
+##### 1. Agregue un campo Estado_Matrícula a la tabla Matrícula que indique si el estudiante se encuentra “En Ejecución”, “Terminado” o “Cancelado”
 
   ```sql
   DROP TABLE IF EXISTS `Matriculas`;
@@ -21,19 +21,19 @@
 
   ```
 
-2. Agregue a el campo edad a la tabla de Aprendices.
+##### 2. Agregue a el campo edad a la tabla de Aprendices.
 
   ```sql
   ALTER TABLE `Aprendices` ADD `edad` VARCHAR(3) AFTER `apellido`;
   ```
 
-3. Si suponemos que los cursos tienen una duración diferente dependiendo de la ruta que lo contenga ¿qué modificación haría a la estructura de datos ya planteada?
+##### 3. Si suponemos que los cursos tienen una duración diferente dependiendo de la ruta que lo contenga ¿qué modificación haría a la estructura de datos ya planteada?
 
   ```sql
   ALTER TABLE `Cursos` ADD `duracion` INT NOT NULL AFTER `nombre_curso`;
   ```
 
-4. Seleccionar los nombres y edades de aprendices que están cursando la carrera de electrónica.
+##### 4. Seleccionar los nombres y edades de aprendices que están cursando la carrera de electrónica.
 
   ```sql
   SELECT a.nombre AS Nombre, a.apellido AS Apellido, a.edad AS Edad, c.carrera AS Carrera, m.estado AS Estado
@@ -43,7 +43,7 @@
   JOIN Carreras c ON c.id_carrera = r.id_carrera
   WHERE c.carrera = 'Electronica' AND m.estado = 'Activo';
   ```
-Sin resultado. Ninguno está cursando, ya todos terminaron o cancelaron.
+##### Sin resultado. Ninguno está cursando, ya todos terminaron o cancelaron.
 
   ```sql
   SELECT a.nombre AS Nombre, a.apellido AS Apellido, a.edad AS Edad,
@@ -55,9 +55,11 @@ Sin resultado. Ninguno está cursando, ya todos terminaron o cancelaron.
   WHERE c.carrera = 'Electronica';
   ```
 
+##### Resultado
+
 ![Alt text](image-1.png)
 
-5. Seleccionar Nombres de Aprendices junto al nombre de la ruta de
+##### 5. Seleccionar Nombres de Aprendices junto al nombre de la ruta de
 aprendizaje que cancelaron.
 
 ```sql
@@ -68,9 +70,12 @@ aprendizaje que cancelaron.
   JOIN Rutas r ON r.id_ruta = a.id_ruta
   WHERE m.estado = 'Cancelado';
   ```
+
+##### Resultado
+
 ![Alt text](image-2.png)
 
-6. Seleccionar Nombre de los cursos que no tienen un instructor asignado.
+##### 6. Seleccionar Nombre de los cursos que no tienen un instructor asignado.
 
   ```sql
   SELECT nombre_curso AS Cursos, id_instructor AS Instructores
@@ -78,9 +83,11 @@ aprendizaje que cancelaron.
   WHERE id_instructor IS NULL;
   ```
 
+##### Resultado
+
 ![Alt text](image-3.png)
 
-7. Seleccionar Nombres de los instructores que dictan cursos en la ruta de aprendizaje “Sistemas de Información Empresariales”.
+##### 7. Seleccionar Nombres de los instructores que dictan cursos en la ruta de aprendizaje “Sistemas de Información Empresariales”.
 
   ```sql
   SELECT DISTINCT i.nombre_instructor AS Nombre_Instructor, r.nombre_ruta AS Ruta
@@ -90,9 +97,12 @@ aprendizaje que cancelaron.
   JOIN Rutas r ON r.id_ruta = cr.id_ruta
   WHERE r.nombre_ruta = 'Sistemas de Informacion Empresariales';
   ```
+
+##### Resultado
+
 ![Alt text](image-4.png)
 
-8. Genere un listado de todos los aprendices que terminaron una Carrera mostrando el nombre del profesional, el nombre de la carrera y el énfasis de la carrera (Nombre de la Ruta de aprendizaje)
+##### 8. Genere un listado de todos los aprendices que terminaron una Carrera mostrando el nombre del profesional, el nombre de la carrera y el énfasis de la carrera (Nombre de la Ruta de aprendizaje)
 
   ```sql
   SELECT a.nombre AS Nombre, a.apellido AS Apellido, r.nombre_ruta AS Ruta, 
@@ -103,10 +113,11 @@ aprendizaje que cancelaron.
   JOIN Carreras c ON c.id_carrera = r.id_carrera
   WHERE m.estado = 'Terminado';
   ```
+##### Resultado
 
 ![Alt text](image-5.png)
 
-9. Genere un listado de los aprendices matriculados en el curso “Bases de Datos Relacionales”.
+##### 9. Genere un listado de los aprendices matriculados en el curso “Bases de Datos Relacionales”.
 
   ```sql
   SELECT a.nombre, a.apellido, c.nombre_curso
@@ -118,10 +129,12 @@ aprendizaje que cancelaron.
   WHERE c.nombre_curso = 'Bases de Datos Relacionales' AND m.estado = "Activo";
   ```
 
+##### Resultado
+
 ![Alt text](image.png)
 
 
-10. Nombres de Instructores que no tienen curso asignado.
+##### 10. Nombres de Instructores que no tienen curso asignado.
 
   ```sql
   SELECt DISTINCT i.nombre_instructor, c.id_instructor
@@ -129,6 +142,8 @@ aprendizaje que cancelaron.
   LEFT JOIN Cursos c ON c.id_instructor = i.id_instructor
   WHERE c.id_instructor IS NULL;
   ```
+
+##### Resultado
 
   ![Alt text](image-7.png)
 
