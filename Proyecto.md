@@ -155,6 +155,7 @@ aprendizaje que cancelaron.
 ![Alt text](image-9.png)
 
 ------
+### Preguntas
 
 #### Pregunta 1:
 
