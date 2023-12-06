@@ -133,6 +133,8 @@ aprendizaje que cancelaron.
   ![Alt text](image-7.png)
 
 
+### Diagramas Finales
+
 ![Alt text](image-10.png)
 
 ![Alt text](image-9.png)
