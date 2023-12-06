@@ -256,7 +256,6 @@ CREATE TABLE IF NOT EXISTS `Matriculas`(
 ALTER TABLE `Matriculas`ADD `estado` VARCHAR(45) NOT NULL AFTER `id_matricula`;
 
 -- Insertar datos en la tabla Matriculas
--- Insertar datos en la tabla Matriculas
 INSERT INTO `Matriculas` (`id_aprendiz`, `estado`)
 VALUES
     (1, 'Activo'),
