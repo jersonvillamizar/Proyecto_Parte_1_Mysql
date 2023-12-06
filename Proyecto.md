@@ -154,5 +154,60 @@ aprendizaje que cancelaron.
 
 ![Alt text](image-9.png)
 
-
 ------
+
+#### Pregunta 1:
+
+En el contexto de bases de datos relacionales, explique la diferencia entre las claves primarias y las claves foráneas. Proporcione un ejemplo hipotético de cómo se podrían utilizar ambas claves en un diseño de base de datos.
+
+a) Las claves primarias son utilizadas para establecer relaciones entre tablas, mientras que las claves foráneas garantizan la unicidad de cada registro en una tabla.
+
+b) Las claves primarias son únicas en toda la base de datos, mientras que las claves foráneas establecen relaciones entre tablas.
+
+c) Las claves primarias son necesarias para realizar consultas complejas, mientras que las claves foráneas son opcionales.
+
+d) Las claves primarias y foráneas son términos intercambiables y tienen el mismo propósito en una base de datos.
+
+##### Respuesta correcta: b) Las claves primarias son únicas en toda la base de datos, mientras que las claves foráneas establecen relaciones entre tablas.
+
+#### Pregunta 2:
+
+Explique el concepto de normalización en el diseño de bases de datos. ¿Cuáles son los beneficios de realizar la normalización y cuándo podría ser apropiado desnormalizar una base de datos?
+
+a) La normalización es innecesaria en el diseño de bases de datos modernas. Desnormalizar una base de datos mejora el rendimiento.
+
+b) La normalización es el proceso de organizar los datos para evitar redundancias y dependencias no deseadas. Desnormalizar puede ser apropiado para mejorar el rendimiento en consultas específicas.
+
+c) La normalización solo se aplica a bases de datos pequeñas. Desnormalizar es siempre una mala práctica.
+
+d) La normalización se refiere a la duplicación intencionada de datos para mejorar la velocidad de recuperación. Desnormalizar es necesario para mantener la integridad referencial.
+
+##### Respuesta correcta: b) La normalización es el proceso de organizar los datos para evitar redundancias y dependencias no deseadas. Desnormalizar puede ser apropiado para mejorar el rendimiento en consultas específicas.
+
+#### Pregunta 3:
+
+En el contexto de los diagramas de entidad-relación (ER), defina el término "cardinalidad" y explique cómo se representa en un diagrama. Proporcione un ejemplo práctico de una relación con una cardinalidad específica.
+
+a) La cardinalidad indica la complejidad de un diagrama ER y se representa mediante la cantidad de entidades involucradas. Por ejemplo, una relación "Uno a Uno" implica una cardinalidad de 1.
+
+b) La cardinalidad se refiere a la cantidad máxima de registros en una tabla y se representa con el símbolo "<>" en un diagrama ER. Por ejemplo, una relación "Muchos a Muchos" tiene una cardinalidad de <>.
+
+c) La cardinalidad describe la cantidad de instancias en una entidad que pueden estar asociadas con una instancia en otra entidad. Se representa con líneas y números en un diagrama ER. Por ejemplo, una relación "Uno a Muchos" se representa con un "1" y un "M".
+
+d) La cardinalidad es una propiedad exclusiva de las claves primarias y se representa mediante el uso de llaves en un diagrama ER. Por ejemplo, una relación "Muchos a Uno" se representa con una clave primaria.
+
+##### Respuesta correcta: c) La cardinalidad describe la cantidad de instancias en una entidad que pueden estar asociadas con una instancia en otra entidad. Se representa con líneas y números en un diagrama ER. Por ejemplo, una relación "Uno a Muchos" se representa con un "1" y un "M".
+
+#### Pregunta 4:
+
+Explique la diferencia entre las funciones "INNER JOIN" y "LEFT JOIN" en una consulta SQL. Proporcione un escenario donde sería más apropiado utilizar cada una de estas funciones.
+
+a) "INNER JOIN" devuelve solo los registros que tienen coincidencias en ambas tablas, mientras que "LEFT JOIN" devuelve todos los registros de la tabla izquierda y los registros coincidentes de la tabla derecha. "INNER JOIN" es más apropiado cuando se necesitan todos los registros de ambas tablas.
+
+b) "INNER JOIN" y "LEFT JOIN" son intercambiables y tienen el mismo propósito en una consulta SQL.
+
+c) "INNER JOIN" devuelve todos los registros de la tabla izquierda y los registros coincidentes de la tabla derecha, mientras que "LEFT JOIN" devuelve solo los registros coincidentes. "LEFT JOIN" es más apropiado cuando se desean todos los registros de la tabla izquierda, independientemente de las coincidencias.
+
+d) "INNER JOIN" y "LEFT JOIN" son obsoletos en versiones modernas de SQL y se deben evitar en el diseño de consultas.
+
+##### Respuesta correcta: c) "INNER JOIN" devuelve todos los registros de la tabla izquierda y los registros coincidentes de la tabla derecha, mientras que "LEFT JOIN" devuelve solo los registros coincidentes. "LEFT JOIN" es más apropiado cuando se desean todos los registros de la tabla izquierda, independientemente de las coincidencias.
