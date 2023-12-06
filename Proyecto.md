@@ -2,7 +2,11 @@
 
 ##### Diagrama Relacional
 
+Preguntas 1 a 8
+
 ![Alt text](image-14.png)
+
+Pregunta 9
 
 ![Alt text](image-6.png)
 
@@ -148,12 +152,6 @@
 
   ![Alt text](image-7.png)
 
-
-### Diagramas Finales
-
-![Alt text](image-15.png)
-
-![Alt text](image-12.png)
 
 ------
 ### Preguntas
