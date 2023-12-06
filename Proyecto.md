@@ -59,8 +59,7 @@
 
 ![Alt text](image-1.png)
 
-##### 5. Seleccionar Nombres de Aprendices junto al nombre de la ruta de
-aprendizaje que cancelaron.
+##### 5. Seleccionar Nombres de Aprendices junto al nombre de la ruta de aprendizaje que cancelaron.
 
 ```sql
   SELECT a.nombre AS Nombre, a.apellido AS Apellido, 
@@ -150,9 +149,9 @@ aprendizaje que cancelaron.
 
 ### Diagramas Finales
 
-![Alt text](image-10.png)
+![Alt text](image-11.png)
 
-![Alt text](image-9.png)
+![Alt text](image-12.png)
 
 ------
 ### Preguntas
