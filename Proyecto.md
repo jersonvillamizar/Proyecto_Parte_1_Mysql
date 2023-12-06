@@ -2,6 +2,8 @@
 
 ##### Diagrama Relacional
 
+![Alt text](image-14.png)
+
 ![Alt text](image-6.png)
 
 ### Consultas
